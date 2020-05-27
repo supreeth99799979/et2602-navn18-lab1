@@ -18,3 +18,12 @@ a=Info.split(':')
 IP_addr=str(a[0])
 port=int(a[1])
 
+server.bind((IP_addr,port))
+
+server.listen(100)
+
+print('Waiting for clients to connect')
+
+
+clients=[]
+clients.append(server)
